@@ -1,0 +1,108 @@
+.menubar {
+  background-color: #333;
+  padding: 10px 20px;
+  color: #151313;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  margin-top: 60px;
+}
+
+.menubar .menu-items {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menubar li {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 15px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.menubar li:hover {
+  background-color: #d8d3dc;
+  border-radius: 4px;
+}
+
+.menubar li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  color: black;
+  list-style: none;
+  padding: 10px 0;
+  width: 200px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.menubar li.show-dropdown ul {
+  display: block;
+}
+
+.menubar .dropdown li {
+  padding: 10px 20px;
+}
+
+.menubar .dropdown li:hover {
+  background-color: #656161;
+  border-radius: 4px;
+}
+
+.menubar .search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.menubar input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.menubar input[type="text"]:focus {
+  outline: none;
+  border-color: #eaf3fb;
+}
+
+.menubar button {
+  padding: 8px 15px;
+  background-color: #8f58be;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menubar button:hover {
+  background-color: #f3eef8;
+}
+
+
+
+
+
+
+
+
+
+
+

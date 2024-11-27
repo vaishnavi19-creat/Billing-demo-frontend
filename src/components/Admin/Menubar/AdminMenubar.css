@@ -1,0 +1,105 @@
+.admin-menubar {
+  background-color: #333;
+  padding: 10px 20px;
+  color: rgb(21, 19, 19);
+  width: 100%; /* Ensure it spans the full width */
+  position: fixed; /* Fixed at the top of the page */
+  top: 0; /* Stick to the top */
+  left: 0; /* Align with the left edge */
+  z-index: 1000; /* Ensure it's on top of other content */
+  display: flex; /* To arrange items horizontally */
+  justify-content: space-between; /* Add space between items */
+  align-items: center; 
+}
+
+/* Space below the menubar content */
+body {
+  margin-top: 60px; /* Adjust this value to prevent content from being hidden behind the fixed menubar */
+}
+
+/* Create a container for the menu items (Customer, Product) */
+.admin-menubar .menu-items {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for menu items - displayed horizontally */
+.admin-menubar li {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 15px; /* Added margin for spacing between menu items */
+  font-size: 16px;
+  display: inline-block; /* Ensure items are displayed in a row */
+}
+
+.admin-menubar li:hover {
+  background-color: #d8d3dc;
+  border-radius: 4px;
+}
+
+/* Dropdown Menu */
+.admin-menubar li ul {
+  display: none; /* Hide the dropdown initially */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  color: black;
+  list-style: none;
+  padding: 10px 0;
+  width: 200px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* When the dropdown is visible (based on state change in React) */
+.admin-menubar li.show-dropdown ul {
+  display: block; /* Show the dropdown */
+}
+
+.admin-menubar .dropdown li {
+  padding: 10px 20px;
+}
+
+.admin-menubar .dropdown li:hover {
+  background-color: #656161;
+  border-radius: 4px;
+}
+
+/* Create a container for the search bar and button */
+.admin-menubar .search-bar {
+  display: flex;
+  align-items: center; /* Center search input and button vertically */
+}
+
+/* Search Bar */
+.admin-menubar input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.admin-menubar input[type="text"]:focus {
+  outline: none;
+  border-color: #eaf3fb;
+}
+
+/* Search Button */
+.admin-menubar button {
+  padding: 8px 15px;
+  background-color: #8f58be;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-menubar button:hover {
+  background-color: #f3eef8;
+}

@@ -1,0 +1,127 @@
+Container for the entire product list
+.product-list-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title for the product list */
+  .product-list-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the horizontal product list */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  /* Individual product card */
+  .product-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(50% - 20px); /* 2 cards per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Product information displayed horizontally */
+  .product-info-horizontal {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Styling for each product info field */
+  .product-info-horizontal span {
+    white-space: nowrap;
+  }
+  
+  /* Action buttons */
+  .product-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  /* Button styles */
+  .view-btn, .edit-btn, .delete-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-btn:hover { background-color: #3E8E41; }
+  .edit-btn { background-color: #2196F3; }
+  .edit-btn:hover { background-color: #1976D2; }
+  .delete-btn { background-color: #F44336; }
+  .delete-btn:hover { background-color: #D32F2F; }
+  
+  /* Modal styling */
+  .product-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    z-index: 1000;
+  }
+  
+  .product-modal h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+  }
+  
+  .close-btn {
+    margin-top: 10px;
+    background-color: #555;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .close-btn:hover {
+    background-color: #333;
+  }
+  
+  /* Overlay to darken background when modal is open */
+  .product-modal + .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+
+
+

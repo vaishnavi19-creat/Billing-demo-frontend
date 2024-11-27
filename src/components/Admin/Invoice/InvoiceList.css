@@ -1,0 +1,79 @@
+/* InvoiceList.css */
+
+/* Container for the invoice list */
+.invoice-list-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Table styles */
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.invoice-table th,
+.invoice-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.invoice-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.invoice-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.invoice-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Action buttons */
+.invoice-table button {
+    padding: 6px 12px;
+    margin: 4px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.invoice-table button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .invoice-list-container {
+        width: 95%;
+    }
+
+    .invoice-table th,
+    .invoice-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .invoice-table button {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

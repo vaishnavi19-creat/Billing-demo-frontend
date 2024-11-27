@@ -1,0 +1,164 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Main container for the invoice page */
+.invoice-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form section */
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    width: 120px;
+}
+
+input,
+select {
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    width: 65%;
+}
+
+input[type="date"],
+input[type="number"] {
+    width: 65%;
+}
+
+/* Items section */
+.items-section {
+    margin-bottom: 20px;
+}
+
+.items-section h3 {
+    margin-bottom: 10px;
+}
+
+.item-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item-group select,
+.item-group input {
+    margin-right: 10px;
+}
+
+button[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #45a049;
+}
+
+/* Summary section */
+.summary-section {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.summary-section h3 {
+    margin-bottom: 10px;
+}
+
+.form-group span {
+    width: 60%;
+    font-weight: bold;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-actions button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.form-actions button:hover {
+    background-color: #0056b3;
+}
+
+.form-actions button:last-child {
+    background-color: #28a745;
+}
+
+.form-actions button:last-child:hover {
+    background-color: #218838;
+}
+
+/* Invoices list */
+.invoices-list {
+    margin-top: 30px;
+}
+
+.invoices-list h3 {
+    margin-bottom: 10px;
+}
+
+.invoices-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.invoices-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invoices-list li span {
+    font-weight: bold;
+}
